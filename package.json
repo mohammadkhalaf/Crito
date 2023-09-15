@@ -1,0 +1,14 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "school project",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch scss/styles.scss styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}

@@ -1,0 +1,351 @@
+$primary-gray: rgba(25, 25, 25, 0.7);
+$secondary-white:#f0efe9;
+li{
+    color: $primary-gray;
+    font-family: 'DM Sans', sans-serif;
+}
+img{
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    background-color: $secondary-white;
+    .header_container{
+
+        display: flex;
+        flex-direction: column;
+    
+        .contact{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid green;
+            border-bottom: 1px solid black;
+            margin-bottom: 10px;
+            .contact_list{
+                display: flex;
+                align-items: center;
+                .contact_list-item{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .social_icons{
+                display: flex;
+            }
+        }
+        .nav_list{
+
+            display: flex;
+        }
+    }
+}
+.banner{
+background-color: $secondary-white;
+display: flex;
+align-items: center;
+border: 1px solid red;
+justify-content: space-between;
+}
+.features{
+    border: 1px solid purple;
+    .logos{
+        border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .features_wrapper{
+        max-width: 1520px;
+        margin: auto;
+        border: 1px solid orange;
+        display: flex;
+        align-items: center;
+        .features_container{
+            border: 1px solid magenta;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+                .single_feature{
+                    border: 1px solid gray;
+                    max-width: 307px;
+                    margin-right: 30px;
+                    padding: 24px 31px 40px ;
+                }
+
+        }
+    }
+}
+
+.about{
+    border: 1px solid orange;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1320px;
+    margin: 120px auto;
+    background-color: brown;
+    .image_container{
+        max-width: 500px;
+        max-height: 500px;
+        margin-left: 56px;
+        position: relative;
+        .wavy_line{
+            border: 1px solid red;
+            position:absolute;
+            left: 0;
+            top: 10px;
+        }
+        .about_image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .founder_card{
+            background-color: lightblue;
+            max-width: 368px;
+            padding: 55px 24px;
+            position: absolute;
+            bottom: 40px;
+            left: -60px;
+        }
+
+
+    }
+    .about_content{
+        border: 1px solid navy;
+        max-width:532px ;
+
+    }
+}
+.services{
+    background-color: $secondary-white;
+    padding: 120px 300px;
+    .services_wrapper{
+        border: 1px solid orange;
+        max-width: 1320px;
+        //margin: 120px 300px;
+        .title{
+            color: orange;
+        }
+        .services_container{
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       gap: 30px;
+            .service_card{
+                max-width: 308px;
+                  background-color: #fff;
+                    padding: 48px 30px;
+                .line{
+                    height: 1px;
+                    background-color: black;
+                    width: 20px;
+                }
+                h4{
+                    color: red;
+                    margin-top: 36px;
+                    margin-bottom: 20px;
+                }
+              
+            }
+        }
+    }
+    .service_btn{
+        display: block;
+        margin: 20px auto;
+
+    }
+
+
+}
+.why_choose-us{
+    border: 1px solid blue;
+    display: flex;
+    
+    .content{
+        margin:0 116px 0 300px;
+        .benefits_list{
+            border: 1px solid orange;
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 42px;
+  
+                }
+            }
+        }
+
+    }
+    .image_container{
+        //max-width: 1075px;
+        position: relative;
+        border: 1px solid red;
+        img{
+            max-width: 645px;
+        }
+        
+    }
+    .image_container::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: aqua;
+        z-index: 1;
+        
+    }
+
+}
+.projects{
+    border: 1px solid red;
+    max-width: 1320px;
+    margin: auto;
+.projects_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+     .project_card{
+        width: 645px;
+        img{
+            width: 100%;
+            height: 311px;
+            object-fit: cover;
+        
+        }
+        .description{
+            color: red;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+        }
+        .project_btn{
+            display: block;
+       margin-left: auto;
+       margin-top: 10px;
+        }
+     }
+
+}
+.projects_btn{
+    display: block;
+    margin: 20px auto;
+}
+}
+.team{
+background-color:#EDCF87 ;
+.team_header{
+    max-width: 1320px;
+    border: 1px solid red;
+    margin: auto;
+    .team_header-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+    .team_container{
+    max-width: 1320px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+   
+        .member_card{
+            border: 1px solid red;
+            max-width: 306px;
+            img{
+                width: 100%;
+                height: 420px;
+                object-fit: cover;
+            }
+
+        }
+    }
+    .image_slider{
+        border: 1px solid green;
+        display: flex;
+        justify-content: center;
+        margin: 15px 0px;
+        .slider{
+            height: 10px;
+            width: 10px;
+            background-color: gray;
+            border-radius: 100%;
+            margin-right: 10px;
+            .active{
+
+            }
+        }
+    }
+    .testimonials{
+     background-color: #fff;
+     .header_wrapper{
+        border: 1px solid magenta;
+        text-align: center;
+     }
+
+        .testimonials_wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 30px;
+
+            .testimonial{
+                max-width: 356px;
+                padding: 48px 32px;
+                .customer_info{
+                    display: flex;
+                    align-items: center;
+margin-top: 20px;
+
+                img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                        object-fit: cover;
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+        }
+
+      .testimonials_btn{
+        display: block;
+        margin: auto;
+    
+      }  
+
+    }
+    
+}
+.blog{
+    border: 1px solid red;
+    .articles_wrapper{
+        border: 2px solid purple;
+        max-width:1347px ;
+        margin: auto;
+
+
+        .articles{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+            border: 1px solid orangered;
+    
+            .article{
+               width: 400px;
+    
+                img{
+                    width: 100%;
+                    height: 230px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
