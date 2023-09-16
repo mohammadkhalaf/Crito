@@ -353,6 +353,53 @@ img {
   right: 0px;
 }
 
+.footer {
+  border: 1px solid orange;
+  background: #0e1021;
+  color: white;
+}
+.footer .footer_wrapper {
+  border: 3px solid purple;
+}
+.footer .footer_wrapper .footer_nav {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  padding: 114px 300px 30px 300px;
+}
+.footer .footer_wrapper .footer_nav section {
+  border: 1px solid red;
+}
+.footer .footer_wrapper .footer_nav section a {
+  display: block;
+}
+.footer .footer_wrapper .footer_nav .about_crito {
+  max-width: 310px;
+}
+.footer .footer_wrapper .footer_social_copyright {
+  border: 5px solid magenta;
+  padding: 10px 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer_wrapper .footer_social_copyright .copyright {
+  color: blue;
+}
+.footer .footer_wrapper .footer_social_copyright .social_links {
+  border: 1px solid red;
+}
+.footer .footer_wrapper .footer_social_copyright .social_links .social_icons {
+  display: flex;
+  align-items: center;
+}
+.footer .footer_wrapper .footer_social_copyright .social_links .social_icons li {
+  margin-left: 10px;
+}
+.footer .footer_wrapper .footer_social_copyright .social_links .social_icons li img {
+  border: 2px solid blue;
+  filter: invert(100%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
