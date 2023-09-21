@@ -1,78 +1,195 @@
 $primary-gray: rgba(25, 25, 25, 0.7);
+$secondary-gray:rgba(25, 25, 25, 0.1);
+$light-orange: #f9d783;
+$font-color:#191919;
 $secondary-white:#f0efe9;
-li{
-    color: $primary-gray;
-    font-family: 'DM Sans', sans-serif;
-}
-img{
+$orange:#F94D1C;
 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.container{
-    display: flex;
-    align-items: center;
-    background-color: $secondary-white;
-    .header_container{
+header{
 
+    .container{
         display: flex;
-        flex-direction: column;
-    
-        .contact{
+        justify-content: space-between;
+        align-items: center;
+        background-color: $secondary-white;
+        padding:1.8rem 30rem ;
+   
+        .logo{
+            margin-right: 3rem;
+        }
+        .header_container{
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border: 1px solid green;
-            border-bottom: 1px solid black;
-            margin-bottom: 10px;
-            .contact_list{
+            flex-direction: column;
+            flex: 1;
+        
+            .contact{
                 display: flex;
                 align-items: center;
-                .contact_list-item{
+                justify-content: space-between;
+                padding-bottom: 1.2rem;
+                border-bottom: 1px solid  $secondary-gray;
+                margin-bottom: 10px;
+                .contact_list{
                     display: flex;
                     align-items: center;
+                    .contact_list-item{
+
+                        img{
+                            margin-right:.8rem ;
+                        }
+                        display: flex;
+                        align-items: center;
+                        margin-right: 1.5rem;
+                        font-size: 1.5rem;
+                        color: $font-color;
+                    }
+                }
+                .social_icons{
+                    display: flex;
+                    li{
+                        margin-left:1.8rem ;
+                    }
                 }
             }
-            .social_icons{
-                display: flex;
+            .nav_list{
+                    display: flex;
+                    align-items: center;
+                        li{
+                            font-size: 1.6rem;
+                            margin-right: 1.5rem;
+                        }
+
+                        button{
+                            margin-left: auto;
+                            background-color: $light-orange;
+                            line-height: 1.6rem;
+                            border: none;
+                            width: 12rem;
+                            height: 4.8rem;
+                            border-radius: 4rem;
+
+                        }
+        
+
             }
         }
-        .nav_list{
-
-            display: flex;
+    }
+    .banner{
+    background-color: $secondary-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 30rem;
+    .image-container{
+        max-width: 65rem;
+        img{
+            width: 100%;
+            max-width: 50rem;
         }
     }
-}
-.banner{
-background-color: $secondary-white;
-display: flex;
-align-items: center;
-border: 1px solid red;
-justify-content: space-between;
+    .content{
+        //align-self: self-start;
+        flex: 1;
+        //margin-top: 12rem;
+        h1{
+            font-size: 9rem;
+            margin-bottom: 2.8rem;
+        }
+        p{
+            font-size: 2rem;
+            line-height: 3.2rem;
+            color: $primary-gray;
+            letter-spacing: 1px;
+            margin-bottom: 5.2rem;
+            line-height: 3.2rem;
+        }
+        .buttons-containers{
+
+            button{
+                padding: 1.8rem 3rem;
+                border-radius: 40px;
+                &:first-child{
+                    background-color: $light-orange;
+                }
+                &:nth-child(2){
+                    border: .1rem solid $font-color;
+                    margin-left: 1.6rem;
+
+                }
+            }
+
+        }
+    }
+    }
 }
 .features{
-    border: 1px solid purple;
+
     .logos{
-        border: 1px solid blue;
+        padding: 7.2rem 30rem;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        
     }
 
 
     .features_wrapper{
         max-width: 1520px;
-        margin: auto;
-        border: 1px solid orange;
+        margin: 0 20rem;
+        border: 1px solid $secondary-gray;
         display: flex;
         align-items: center;
+        padding: 8rem 10rem;
+        .features_content{
+            margin-right: 10rem;
+            max-width: 42rem;
+            h4{
+                color: $orange;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                margin-bottom: 1.7rem;
+            
+            }
+            h2{
+                font-size: 4.5rem;
+                color: $font-color;
+                margin-bottom: 4.8rem;
+            }
+            button{     
+                background-color: $light-orange;
+                width: 100%;
+                height: 5.6rem;
+                border-radius: 4rem;
+                font-size: 1.6rem;
+                img{
+                    margin-left: .4rem;
+                    width: 1.3rem;
+                }
+
+            }
+        }
         .features_container{
-            border: 1px solid magenta;
             display: grid;
             grid-template-columns: repeat(2,1fr);
                 .single_feature{
-                    border: 1px solid gray;
-                    max-width: 307px;
+                    width: 22.7rem;
                     margin-right: 30px;
                     padding: 24px 31px 40px ;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        margin-bottom: 2.8rem;
+                    }
+
+                    h4{
+                        font-size: 2.2rem;
+                        color: $font-color;
+                        margin-bottom: 1.5rem;          
+                    }
+                    p{
+                        font-size: 1.6rem;
+                        line-height: 2.5rem;
+                        color: $primary-gray;
+                    }
                 }
 
         }
