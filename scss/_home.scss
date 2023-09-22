@@ -197,19 +197,16 @@ header{
 }
 
 .about{
-    border: 1px solid orange;
     display: flex;
     justify-content: space-between;
     max-width: 1320px;
     margin: 120px auto;
-    background-color: brown;
     .image_container{
         max-width: 500px;
         max-height: 500px;
         margin-left: 56px;
         position: relative;
         .wavy_line{
-            border: 1px solid red;
             position:absolute;
             left: 0;
             top: 10px;
@@ -222,17 +219,79 @@ header{
         .founder_card{
             background-color: lightblue;
             max-width: 368px;
-            padding: 55px 24px;
+            padding: 5.5rem 1.7rem;
             position: absolute;
             bottom: 40px;
             left: -60px;
+            h6{
+                font-size: 1.6rem;
+                font-weight: bold;
+                margin-bottom: 2.2rem;
+
+                span{
+                    color: $orange;
+                }
+            }
+            p{
+                font-size: 1.6rem;
+                color: $font-color;
+            }
         }
 
 
     }
     .about_content{
-        border: 1px solid navy;
-        max-width:532px ;
+        max-width: 52rem;
+
+        h4{
+            color: $orange;
+            font-size: 1.8rem;
+            margin-bottom: 1.7rem;
+        }
+        h3{
+            font-size: 4.5rem;
+            max-width: 53rem;
+            font-style: bold;
+            margin-bottom: 3.7rem;
+
+        }
+        p{
+            font-size: 1.6rem ;
+            line-height: 3.2rem;
+            color: $primary-gray;
+            margin-bottom: 8.8rem;
+        }
+     
+        .buttons_containers{
+            display: flex;
+            align-items: center;
+
+            button{
+                padding: 1.7rem 3rem;
+                border-radius: 4rem;
+                background-color: black;
+                color: $secondary-white;
+                margin-right: 3.6rem;
+            }
+            .video_btn{
+                background-color: transparent;
+                display: inline-flex;
+                align-items: center;
+                padding: 0 0 ;
+                font-size: 1.6rem;
+                color: $font-color;
+                img{
+                    width: 4.6rem;
+                    margin-right: 1.6rem;
+                }
+
+                
+            }
+    
+          
+        }
+      
+
 
     }
 }
