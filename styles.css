@@ -323,34 +323,68 @@ header .banner .content .buttons-containers button:nth-child(2) {
 .why_choose-us {
   border: 1px solid blue;
   display: flex;
+  padding: 6rem 30rem;
+  justify-content: space-between;
 }
-.why_choose-us .content {
-  margin: 0 116px 0 300px;
+.why_choose-us .content .title {
+  color: #F94D1C;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-bottom: 1.8rem;
 }
-.why_choose-us .content .benefits_list {
-  border: 1px solid orange;
+.why_choose-us .content h3 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #191919;
+  margin-bottom: 4.8rem;
+  max-width: 40rem;
 }
 .why_choose-us .content .benefits_list ul li {
   display: flex;
   align-items: center;
   margin-bottom: 42px;
 }
+.why_choose-us .content .benefits_list ul li .img_wrapper {
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  padding: 1.4rem;
+  border-radius: 100%;
+  margin-right: 2.4rem;
+}
+.why_choose-us .content .benefits_list ul li img {
+  width: 3rem;
+  height: 3rem;
+}
+.why_choose-us .content .benefits_list ul li .list_detail h5 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #191919;
+  margin-bottom: 0.8rem;
+}
+.why_choose-us .content .benefits_list ul li .list_detail p {
+  font-size: 1.6rem;
+  color: rgba(25, 25, 25, 0.7);
+  line-height: 2.8rem;
+}
+.why_choose-us .content .benefits_list ul li:last-child {
+  margin-bottom: 0;
+}
 .why_choose-us .image_container {
   position: relative;
-  border: 1px solid red;
 }
 .why_choose-us .image_container img {
   max-width: 645px;
+  height: 50rem;
+  object-fit: contain;
 }
 .why_choose-us .image_container::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background-color: aqua;
-  z-index: 1;
+  bottom: 0;
+  right: -30rem;
+  width: 100rem;
+  height: 42rem;
+  background-color: #f0efe9;
+  z-index: -1;
 }
 
 .projects {
