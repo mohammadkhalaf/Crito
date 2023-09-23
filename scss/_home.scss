@@ -297,42 +297,85 @@ header{
 }
 .services{
     background-color: $secondary-white;
-    padding: 120px 300px;
+    padding: 12rem 30rem;
+    position: relative;
     .services_wrapper{
-        border: 1px solid orange;
-        max-width: 1320px;
-        //margin: 120px 300px;
-        .title{
-            color: orange;
+        h4{
+            color: $orange;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            margin-bottom: 1.7rem;
         }
+        h3{
+           color: $font-color;
+           font-size: 4.5rem;
+           line-height: 5.4rem; 
+           max-width: 50rem;
+           margin-bottom: 4.8rem;
+    
+        }
+       
         .services_container{
        display: grid;
        grid-template-columns: repeat(4,1fr);
        gap: 30px;
             .service_card{
-                max-width: 308px;
-                  background-color: #fff;
-                    padding: 48px 30px;
+                //max-width: 308px;
+                background-color: #fff;
+                padding: 4rem 3rem;
+           
                 .line{
                     height: 1px;
                     background-color: black;
-                    width: 20px;
+                    width: 3.9rem;
+                    margin-bottom: 3.6rem;
                 }
                 h4{
-                    color: red;
-                    margin-top: 36px;
-                    margin-bottom: 20px;
+                    color: $font-color;
+                    font-size: 2.2rem;
+                    line-height: 3.3rem;
+                    margin-bottom: 1.2rem;
                 }
-              
+                p{
+                    font-size: 1.6rem;
+                    color:$primary-gray ;
+                    max-width: 24rem;
+                    margin-bottom: 1rem;
+                }
+                .ar{
+                    display: block;
+                    padding: 1.5rem;
+                    border-radius: 100%;
+                    background-color: black;
+                    margin-left: auto;
+          
+                }
+          
+   
+             
+            }
+        }
+        .btn-container{
+            text-align: center;
+
+            .service_btn{
+                border: 1px solid black;
+                display: inline-block;
+                border-radius: 4rem;
+                margin: 20px auto;
+                color: $font-color;
+                padding: 2rem 3rem;
+                font-size: 1.6rem;
+                line-height: 1.5rem;
+        
             }
         }
     }
-    .service_btn{
-        display: block;
-        margin: 20px auto;
-
-    }
-
+.img-container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 }
 .why_choose-us{

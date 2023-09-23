@@ -251,14 +251,21 @@ header .banner .content .buttons-containers button:nth-child(2) {
 
 .services {
   background-color: #f0efe9;
-  padding: 120px 300px;
+  padding: 12rem 30rem;
+  position: relative;
 }
-.services .services_wrapper {
-  border: 1px solid orange;
-  max-width: 1320px;
+.services .services_wrapper h4 {
+  color: #F94D1C;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin-bottom: 1.7rem;
 }
-.services .services_wrapper .title {
-  color: orange;
+.services .services_wrapper h3 {
+  color: #191919;
+  font-size: 4.5rem;
+  line-height: 5.4rem;
+  max-width: 50rem;
+  margin-bottom: 4.8rem;
 }
 .services .services_wrapper .services_container {
   display: grid;
@@ -266,23 +273,51 @@ header .banner .content .buttons-containers button:nth-child(2) {
   gap: 30px;
 }
 .services .services_wrapper .services_container .service_card {
-  max-width: 308px;
   background-color: #fff;
-  padding: 48px 30px;
+  padding: 4rem 3rem;
 }
 .services .services_wrapper .services_container .service_card .line {
   height: 1px;
   background-color: black;
-  width: 20px;
+  width: 3.9rem;
+  margin-bottom: 3.6rem;
 }
 .services .services_wrapper .services_container .service_card h4 {
-  color: red;
-  margin-top: 36px;
-  margin-bottom: 20px;
+  color: #191919;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  margin-bottom: 1.2rem;
 }
-.services .service_btn {
+.services .services_wrapper .services_container .service_card p {
+  font-size: 1.6rem;
+  color: rgba(25, 25, 25, 0.7);
+  max-width: 24rem;
+  margin-bottom: 1rem;
+}
+.services .services_wrapper .services_container .service_card .ar {
   display: block;
+  padding: 1.5rem;
+  border-radius: 100%;
+  background-color: black;
+  margin-left: auto;
+}
+.services .services_wrapper .btn-container {
+  text-align: center;
+}
+.services .services_wrapper .btn-container .service_btn {
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 4rem;
   margin: 20px auto;
+  color: #191919;
+  padding: 2rem 3rem;
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+}
+.services .img-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .why_choose-us {
@@ -541,6 +576,11 @@ header .banner .content .buttons-containers button:nth-child(2) {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 li {
