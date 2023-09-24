@@ -455,29 +455,63 @@ header .banner .content .buttons-containers button:nth-child(2) {
   background-color: #EDCF87;
 }
 .team .team_header {
-  max-width: 1320px;
+  max-width: 130rem;
+  margin: 9rem auto;
   border: 1px solid red;
-  margin: auto;
+}
+.team .team_header h5 {
+  color: #F94D1C;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  margin-bottom: 1.8rem;
 }
 .team .team_header .team_header-wrapper {
   display: flex;
   justify-content: space-between;
 }
+.team .team_header .team_header-wrapper h3 {
+  color: #191919;
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 5.5rem;
+}
+.team .team_header .team_header-wrapper button {
+  background-color: transparent;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #191919;
+  padding: 1.9rem 2.6rem;
+  border: 0.1rem solid #191919;
+  border-radius: 4rem;
+}
 .team .team_container {
-  max-width: 1320px;
+  max-width: 132rem;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 .team .team_container .member_card {
-  border: 1px solid red;
   max-width: 306px;
 }
 .team .team_container .member_card img {
   width: 100%;
   height: 420px;
   object-fit: cover;
+  margin-bottom: 2.8rem;
+}
+.team .team_container .member_card .member_name {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #191919;
+  margin-bottom: 0.8rem;
+}
+.team .team_container .member_card .job_title {
+  color: rgba(25, 25, 25, 0.7);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
 }
 .team .image_slider {
   border: 1px solid green;
@@ -491,6 +525,9 @@ header .banner .content .buttons-containers button:nth-child(2) {
   background-color: gray;
   border-radius: 100%;
   margin-right: 10px;
+}
+.team .image_slider .active {
+  background-color: black;
 }
 .team .testimonials {
   background-color: #fff;

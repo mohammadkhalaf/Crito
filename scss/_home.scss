@@ -534,31 +534,73 @@ header{
 }
 .team{
 background-color:#EDCF87 ;
+//padding: 12rem 30rem;
+
+
 .team_header{
-    max-width: 1320px;
+    max-width: 130rem;
+    margin: 9rem auto;
     border: 1px solid red;
-    margin: auto;
-    .team_header-wrapper{
-        display: flex;
-        justify-content: space-between;
-    }
+        h5{
+            color: $orange;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 2.2rem;
+            margin-bottom: 1.8rem;
+        }
+        .team_header-wrapper{
+            display: flex;
+            justify-content: space-between;
+            h3{
+                color: $font-color;
+                font-size: 4.5rem;
+                font-weight: bold;
+                line-height: 5.5rem;
+            }
+
+            button{
+                background-color: transparent;
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                color: $font-color;
+                padding: 1.9rem 2.6rem;
+                border: .1rem solid $font-color;
+                border-radius: 4rem;
+            }
+        }
 
 }
 
     .team_container{
-    max-width: 1320px;
+        max-width: 132rem;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 10px;
-   
+     
+
         .member_card{
-            border: 1px solid red;
             max-width: 306px;
+        
             img{
                 width: 100%;
                 height: 420px;
                 object-fit: cover;
+                margin-bottom: 2.8rem;
+            }
+            .member_name{
+                font-size: 2.2rem;
+                font-weight: bold;
+                color: $font-color;
+                margin-bottom: .8rem;
+            }
+
+            .job_title{
+                color: $primary-gray;
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 2.8rem;
+
             }
 
         }
@@ -574,9 +616,9 @@ background-color:#EDCF87 ;
             background-color: gray;
             border-radius: 100%;
             margin-right: 10px;
-            .active{
-
-            }
+        }
+        .active{
+        background-color: black;            
         }
     }
     .testimonials{
