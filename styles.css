@@ -321,7 +321,6 @@ header .banner .content .buttons-containers button:nth-child(2) {
 }
 
 .why_choose-us {
-  border: 1px solid blue;
   display: flex;
   padding: 6rem 30rem;
   justify-content: space-between;
@@ -388,36 +387,68 @@ header .banner .content .buttons-containers button:nth-child(2) {
 }
 
 .projects {
-  border: 1px solid red;
-  max-width: 1320px;
+  width: 90vw;
+  max-width: 132rem;
   margin: auto;
+}
+.projects h6 {
+  font-size: 1.8rem;
+  color: #F94D1C;
+  line-height: 2.2rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+.projects h3 {
+  font-size: 4.5rem;
+  color: #191919;
+  line-height: 5.5rem;
+  margin-bottom: 9rem;
+  text-align: center;
 }
 .projects .projects_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 .projects .projects_container .project_card {
-  width: 645px;
+  margin-bottom: 4.8rem;
 }
 .projects .projects_container .project_card img {
   width: 100%;
   height: 311px;
   object-fit: cover;
+  object-position: top center;
 }
-.projects .projects_container .project_card .description {
-  color: red;
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
+.projects .projects_container .project_card .project_title {
+  color: #191919;
+  text-align: left;
+  border-bottom: 1px solid rgba(25, 25, 25, 0.1);
+  margin-top: 3.5rem;
+  padding-bottom: 1rem;
 }
 .projects .projects_container .project_card .project_btn {
   display: block;
   margin-left: auto;
-  margin-top: 10px;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  background-color: transparent;
+  padding: 1.3rem 1.6rem;
 }
-.projects .projects_btn {
-  display: block;
+.projects .projects_container .project_card .project_btn img {
+  width: 1rem;
+  height: 1rem;
+}
+.projects .btn-container {
+  text-align: center;
+}
+.projects .btn-container .projects_btn {
+  display: inline-block;
   margin: 20px auto;
+  background-color: black;
+  color: white;
+  padding: 1.7rem 3.6rem;
+  font-size: 1.6rem;
+  border-radius: 4rem;
 }
 
 .team {
