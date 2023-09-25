@@ -453,11 +453,11 @@ header .banner .content .buttons-containers button:nth-child(2) {
 
 .team {
   background-color: #EDCF87;
+  padding: 12rem 0;
 }
 .team .team_header {
   max-width: 130rem;
-  margin: 9rem auto;
-  border: 1px solid red;
+  margin: auto;
 }
 .team .team_header h5 {
   color: #F94D1C;
@@ -488,6 +488,7 @@ header .banner .content .buttons-containers button:nth-child(2) {
 .team .team_container {
   max-width: 132rem;
   margin: auto;
+  margin-top: 8rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -514,7 +515,6 @@ header .banner .content .buttons-containers button:nth-child(2) {
   line-height: 2.8rem;
 }
 .team .image_slider {
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   margin: 15px 0px;
@@ -531,20 +531,38 @@ header .banner .content .buttons-containers button:nth-child(2) {
 }
 .team .testimonials {
   background-color: #fff;
+  max-width: 152rem;
+  margin: 7rem auto;
+  padding: 20rem 10rem;
 }
 .team .testimonials .header_wrapper {
-  border: 1px solid magenta;
   text-align: center;
+}
+.team .testimonials .header_wrapper h4 {
+  color: #F94D1C;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  margin-bottom: 1.8rem;
+}
+.team .testimonials .header_wrapper h3 {
+  color: #191919;
+  font-size: 4.5rem;
+  line-height: 5.5rem;
 }
 .team .testimonials .testimonials_wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
   margin-top: 30px;
 }
 .team .testimonials .testimonials_wrapper .testimonial {
-  max-width: 356px;
-  padding: 48px 32px;
+  padding: 4.8rem 3.2rem;
+}
+.team .testimonials .testimonials_wrapper .testimonial .customer_review {
+  color: #191919;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+  margin-bottom: 3.6rem;
 }
 .team .testimonials .testimonials_wrapper .testimonial .customer_info {
   display: flex;
@@ -552,15 +570,27 @@ header .banner .content .buttons-containers button:nth-child(2) {
   margin-top: 20px;
 }
 .team .testimonials .testimonials_wrapper .testimonial .customer_info img {
-  width: 30px;
-  height: 30px;
+  width: 7rem;
+  height: 7rem;
   border-radius: 100%;
   object-fit: cover;
   margin-right: 20px;
 }
+.team .testimonials .testimonials_wrapper .testimonial .customer_info .customer_name_job .customer_name {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.team .testimonials .testimonials_wrapper .testimonial .customer_info .customer_name_job .customer_job {
+  color: #F94D1C;
+  font-size: 1.6rem;
+}
 .team .testimonials .testimonials_btn {
   display: block;
   margin: auto;
+  background-color: black;
+  color: white;
+  padding: 1.7rem 3.6rem;
+  border-radius: 4rem;
 }
 
 .blog {

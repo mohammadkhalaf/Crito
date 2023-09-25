@@ -534,13 +534,13 @@ header{
 }
 .team{
 background-color:#EDCF87 ;
-//padding: 12rem 30rem;
+padding: 12rem 0;
 
 
 .team_header{
     max-width: 130rem;
-    margin: 9rem auto;
-    border: 1px solid red;
+    margin: auto;
+
         h5{
             color: $orange;
             font-size: 1.8rem;
@@ -574,6 +574,7 @@ background-color:#EDCF87 ;
     .team_container{
         max-width: 132rem;
         margin: auto;
+        margin-top: 8rem;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 10px;
@@ -606,7 +607,6 @@ background-color:#EDCF87 ;
         }
     }
     .image_slider{
-        border: 1px solid green;
         display: flex;
         justify-content: center;
         margin: 15px 0px;
@@ -623,31 +623,63 @@ background-color:#EDCF87 ;
     }
     .testimonials{
      background-color: #fff;
+     max-width: 152rem;
+     margin: 7rem auto;
+     padding: 20rem 10rem;
      .header_wrapper{
-        border: 1px solid magenta;
         text-align: center;
+
+        h4{
+            color: $orange;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 2.2rem;
+            margin-bottom: 1.8rem;
+        }
+        h3{
+            color: $font-color;
+            font-size: 4.5rem;
+            line-height: 5.5rem;
+
+        }
      }
 
         .testimonials_wrapper{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
+            //gap: 10px;
             margin-top: 30px;
 
             .testimonial{
-                max-width: 356px;
-                padding: 48px 32px;
+                //max-width: 35rem;
+                padding: 4.8rem 3.2rem;
+                .customer_review{
+                    color: $font-color;
+                    font-size: 1.8rem;
+                    line-height: 3.4rem;
+                    margin-bottom: 3.6rem;
+                }
                 .customer_info{
                     display: flex;
                     align-items: center;
-margin-top: 20px;
+                    margin-top: 20px;
 
                 img{
-                        width: 30px;
-                        height: 30px;
+                        width: 7rem;
+                        height: 7rem;
                         border-radius: 100%;
                         object-fit: cover;
                         margin-right: 20px;
+                    }
+                    .customer_name_job{
+                        .customer_name{
+                            font-size: 2.2rem;
+                            font-weight: bold;
+                        }
+                        .customer_job{
+                            color: $orange;
+                            font-size: 1.6rem;
+                        }
                     }
                 }
             }
@@ -657,6 +689,10 @@ margin-top: 20px;
       .testimonials_btn{
         display: block;
         margin: auto;
+        background-color: black;
+        color: white;
+        padding: 1.7rem  3.6rem;
+        border-radius: 4rem;
     
       }  
 
