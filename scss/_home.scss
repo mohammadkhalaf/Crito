@@ -700,16 +700,34 @@ padding: 12rem 0;
     
 }
 .blog{
-    border: 2px solid purple;
     max-width:1347px ;
-    margin: auto;
+    margin:9rem auto;
     
     .articles_wrapper{
+
         .blog_header-wrapper{
-            border: 1px solid orangered;
+            margin-bottom: 3.8rem;
+            h4{
+                color: $orange;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                margin-bottom: 1.8rem;
+            }
             .blog_header{
               display: flex;
               justify-content: space-between;
+              h3{
+                font-size: 4.5rem;
+                color: $font-color;
+                line-height: 5.5rem;
+              }
+              button{
+                background-color: transparent ;
+                border: .1rem solid $font-color;
+                padding: 1.7rem 3rem;
+                border-radius: 4rem;
+
+              }
             }
         }
 
@@ -718,21 +736,68 @@ padding: 12rem 0;
             display: grid;
             grid-template-columns: repeat(3,1fr);
             gap: 30px;
-            border: 1px solid orangered;
     
             .article{
-               width: 400px;
-    
+               .img-container{              
+                position: relative;
+
                 img{
                     width: 100%;
                     height: 230px;
                     object-fit: cover;
+                    margin-bottom: 2.8rem;
+            
                 }
+                .article_date{
+                    position: absolute;
+                    top: 1.6rem;
+                    left: 1.6rem;
+                    width: 5.6rem;
+                    height: 6.4rem;
+                    background-color: $light-orange;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+            
+                    z-index: 1;
+                    font-size: 2.2rem;
+                    line-height: 3.3rem;
+                    font-weight: bold;
+                    .article_date-month{
+                        color: $primary-gray;
+                        font-size: 1.6rem;
+                        font-weight: normal;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+               }
+
+               .article_category{
+                font-size: 1.6rem;
+                color: $primary-gray;
+                margin-bottom: 2rem;
+
+               }
+               .article_title{
+                font-size: 2.2rem;
+                color: $font-color;
+                font-weight: bold;
+                line-height: 3.3rem;
+                margin-bottom: 2rem;
+               }
+               .article_text{
+                color: $primary-gray;
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+
+               }
+              
             }
         }
 
            .image_slider {
-               border: 1px solid green;
                display: flex;
                justify-content: center;
                margin: 15px 0px;
@@ -756,14 +821,35 @@ padding: 12rem 0;
     padding: 103px 300px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: relative;
     h2{
-        font-size: 45px;
+        font-size: 4.5rem;
+        color: $font-color;
+        width: 74rem;
+        scroll-margin-right: 3.4rem;
     }
-    .form{
+    form{
         display: flex;
-        border: 1px solid red;
+
+        input{
+            border: none;
+            border-radius: 4rem;
+            padding: 1.5rem 8rem 1.5rem 3.5rem;
+            
+        }
+        ::placeholder{
+        color: $primary-gray;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        }
+
+        button{
+            background-color: $light-orange;
+            padding: 1.5rem 3.6rem;
+            border-radius: 4rem;
+            margin-left: 1.6rem;
+        }
+
         
     }
     .wavy_line{
