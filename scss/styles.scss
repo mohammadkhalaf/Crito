@@ -1,5 +1,6 @@
 @use "home";
-$primary-color:#433f;
+@import  "variables";
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -10,16 +11,67 @@ body{
 }
 a{
     text-decoration: none;
-    color: black;
+  
 }
 li{
     list-style: none;
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: $ff-header;
+}
+h2{
+    font-size: $fs-800;
+    font-style: bold;
+    margin-bottom: $size-500;
+}
 
 html{
-    font-size: 62.5%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: $font-size;
+    font-family: $ff-body;
+     color: $color-black;
 }
 button{
     border: none;
+    cursor: pointer;
+    border-radius: $radius;
+    font-size: $fs-500;
+}
+a{
+    color: $color-black;
+}
+
+
+
+
+.section-container{
+ width: 100%;
+ max-width: $max-width;
+ margin-left: auto;
+ margin-right: auto;
+ padding:0 $size-700;
+}
+
+.sub-header {
+ color: $dark-orange;
+ font-size: $fs-600;
+ line-height: 2.2rem;
+ margin-bottom: $fs-600;
+    
+  }
+
+
+
+@media  (max-width:1180px) {
+ html{
+    font-size: 50%;
+ }
+    
+}
+
+@media (max-width:700px) {
+    h1,h2{
+        font-size: $fs-700;
+    }
+
+
 }
