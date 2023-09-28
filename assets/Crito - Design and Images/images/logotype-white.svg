@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="168" height="53.285" viewBox="0 0 168 53.285">
   <g id="Logo" transform="translate(-298 -9379.08)">
     <g id="Txt">
-      <text id="CONSULTING_SERVICE" data-name="CONSULTING SERVICE" transform="translate(350 9421.365)" fill="#84848a" font-size="9" font-family="Inter-SemiBold, Inter" font-weight="600" letter-spacing="0.01em"><tspan x="0" y="9">CONSULTING SERVICE</tspan></text>
-      <text id="Crito" transform="translate(350 9379.08)" fill="#fff" font-size="36" font-family="DMSans-Bold, 'DM Sans \31 4pt'" font-weight="700" letter-spacing="-0.02em"><tspan x="0" y="36">Crito</tspan></text>
+      <text id="CONSULTING_SERVICE" data-name="CONSULTING SERVICE" transform="translate(350 9421.365)" fill="#84848a" font-size="9" font-family= "DM Sans, sans-serif" font-weight="600" letter-spacing="0.01em"><tspan x="0" y="9">CONSULTING SERVICE</tspan></text>
+      <text id="Crito" transform="translate(350 9379.08)" fill="#fff" font-size="36" font-family= "DM Sans, sans-serif" font-weight="700" letter-spacing="-0.02em"><tspan x="0" y="36">Crito</tspan></text>
     </g>
     <g id="Icon">
       <g id="_9437f0ff" data-name="#9437f0ff">

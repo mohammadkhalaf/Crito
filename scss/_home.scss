@@ -859,22 +859,32 @@ padding: 12rem 0;
     }
 }
 .footer{
-    border: 1px solid orange;
     background: #0e1021;
     color: white;
+    position: relative;
+    overflow: hidden;
+    .img_container{     
+        position: absolute;
+        bottom: -8rem;
+        right: -13rem;
+
+        height: 20rem;
+
+
+    }
+
     .footer_wrapper{
-        border: 3px solid purple;
-        //padding: 114px 300px 30px 300px;
+        margin: auto;
+        padding-top: 6rem;
 
         .footer_nav{
-            border: 1px solid green;
             display: flex;
             justify-content: space-between;
-            padding: 114px 300px 30px 300px;
+            max-width: 132rem;
+            margin: auto;
+    
     
             section{
-
-                border: 1px solid red;
                 a{
                     display: block;
                 }
@@ -882,11 +892,36 @@ padding: 12rem 0;
             }
             .about_crito{
                max-width: 310px;
+               margin-right: 10rem;
+               p{
+                 font-size: 1.6rem;
+                 color :RGBA(255, 255, 255, 0.7)
+               }
+            }
+        }
+        .nav_lists{
+            display: flex;
+            flex: 1;
+        
+            justify-content: space-between;
+            .nav_list{
+               h3{
+                font-size: 2.2rem;
+                margin-bottom: 4.2rem;
+               }
+               a{
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 1.6rem;
+                line-height: 4rem;
+                font-weight: 500;
+               }
             }
         }
         .footer_social_copyright{
-            border: 5px solid magenta;
-            padding: 10px 300px;
+            //padding: 10px 300px;
+            max-width: 132rem;
+     
+            margin: auto;
             display: flex;
             justify-content: space-between;
             .copyright{
@@ -894,7 +929,7 @@ padding: 12rem 0;
             }
 
             .social_links{
-                border: 1px solid red;
+
           .social_icons{
             display: flex;
             align-items: center;
@@ -902,7 +937,7 @@ padding: 12rem 0;
                 margin-left: 10px;
 
                 img{
-                    border: 2px solid blue;
+    
                     filter: invert(100%);
                 }
             }
