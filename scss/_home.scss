@@ -176,7 +176,15 @@ header{
         border: 1px solid $secondary-gray;
         display: flex;
 
-            @media (max-width:900px) {
+            @media (max-width:1450px) {
+            border: 2px solid green !important;
+            max-width: 132rem;
+            padding: 8rem 3rem;
+                
+                    }
+
+
+            @media (max-width:960px) {
                     flex-direction: column;
                     padding: 4rem 5rem;
                     gap: 4rem;
@@ -185,7 +193,6 @@ header{
     
         .features_content{
             margin-right: 12rem;
-            max-width: 42rem;
             align-self: flex-start;
         
             button{     
@@ -448,10 +455,11 @@ header{
 
 }
 .why_choose-us{
-    display: flex;
-    padding: 6rem 30rem;
-    //position: relative;
-    justify-content: space-between;
+    @include flex-spaced;
+
+    &.section-container{
+     margin:6rem auto 10rem auto;
+    }
     
     .content{
         .title{
@@ -460,13 +468,8 @@ header{
             line-height: 2.2rem;
             margin-bottom: 1.8rem;
         }
-        h3{
-            font-size: 4.5rem;
-            font-weight: bold;
-            color: $font-color;
-            margin-bottom: 4.8rem;
-            max-width: 40rem;
-        }
+        
+
         //margin:0 116px 0 300px;
         .benefits_list{
 
@@ -510,80 +513,117 @@ header{
 
     }
     .image_container{
+        align-self: flex-start;
+        height: 50rem;
+        width: 64rem;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
         position: relative;
+        margin-left: auto;
         img{
-            max-width: 645px;
-            height: 50rem;
+            width: 100%;
+            height: 100%;
+        }
+          
+    }
+    .bg{
+        position: absolute;
+        bottom: -12.5rem;
+        right: -30rem;
+        max-width: 105rem;
+        width: 105rem;
+        height: 42rem;
+        background-color: $bg-color;
+        z-index: -2;
+
+
+    }
+    @media (max-width:1050px) {
+    flex-direction: column;
+    padding: 4rem 5rem;
+    gap: 4rem;
+    .content{
+        width: 100%;
+    }
+    .image_container{
+        width: 100%;
+        height: fit-content;
+        
+        img{
+            height: 100%;
             object-fit: contain;
         }
+        .bg{
+        display: none;
+        }
+    }
+
         
     }
-    .image_container::before{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: -30rem;
-        width: 100rem;
-        height: 42rem;
-        background-color: $secondary-white;
-        z-index: -1;
-        
-    }
+
 
 }
 .projects{
-    width: 90vw;
-    max-width: 132rem;
-    margin: auto;
-    h6{
-        font-size: 1.8rem;
-        color: $orange;
-        line-height: 2.2rem;
-        margin-bottom: 1.8rem;
+    .header_wrapper{
         text-align: center;
-    }
-    h3{
-        font-size: 4.5rem;
-        color: $font-color;
-        line-height: 5.5rem;
         margin-bottom: 9rem;
-        text-align: center;
+        h2{
+            max-width: none;
+        }
     }
     .projects_container{
-
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        justify-content: center;
         gap: 30px;
-     .project_card{
-        //width: 645px;
-        margin-bottom: 4.8rem;
+
+        .project_card{
         img{
             width: 100%;
-            height: 311px;
+            height: 30rem; 
             object-fit: cover;
-            object-position: top center;
+            object-position: center center;
         }
         .project_title{
-            color: $font-color;
-            text-align: left;
-            border-bottom: 1px solid $secondary-gray;
-            margin-top: 3.5rem;
-            padding-bottom: 1rem;
+            font-size: $fs-500;
+            border-bottom: .1rem solid $secondary-gray;
+            margin-top: $size-700;
+            padding-bottom: $size-400;
+            font-weight: bold;
         }
         .project_btn{
+
             display: block;
             margin-left: auto;
-            margin-top: 1rem;
-            font-size: 1.4rem;
+            margin-top: $size-400;
             background-color: transparent;
-            padding: 1.3rem 1.6rem;
-            img{
-    
-                width: 1rem;
+            padding: $size-400 $size-500;
+
+            img{ 
+               width: 1rem;
                 height: 1rem;
             }
+            @include button-hover;
+
         }
      }
+     @media (max-width:900px) {
+         grid-template-columns: 1fr;
+
+         .project_card{
+            width: 70%;
+            margin: auto;
+         }
+
+    }
+     @media (max-width:700px) {   
+              .project_card {
+                  width: 100%;
+   
+              }
+    
+          }
      
     }
     .btn-container{
@@ -596,8 +636,7 @@ header{
            padding: 1.7rem 3.6rem;
            font-size: 1.6rem;
            border-radius: 4rem;
-        
-
+    
        }
     }
 }
