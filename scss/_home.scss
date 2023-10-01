@@ -1002,52 +1002,81 @@ header{
     }
 }
 .footer{
-    background: #0e1021;
-    color: white;
+    background: $bg-black;
+    color: $color-white;
     position: relative;
     overflow: hidden;
     .img_container{     
         position: absolute;
         bottom: -8rem;
         right: -13rem;
-
         height: 20rem;
-
-
     }
 
     .footer_wrapper{
-        margin: auto;
-        padding-top: 6rem;
+        //margin: auto;
+        padding-top: $size-900;
 
         .footer_nav{
-            display: flex;
-            justify-content: space-between;
-            max-width: 132rem;
-            margin: auto;
-    
-    
-            section{
-                a{
-                    display: block;
-                }
-                
-            }
+            padding-bottom: $size-1000;
+            @include flex-spaced;
+            border: 2px solid red;
+            @media (max-width:1020px) {  
+                 border: 2px solid lightcoral;
+                 flex-direction: column;
+
+         }
+           
+
             .about_crito{
-               max-width: 310px;
+               align-self: flex-start;
+               max-width: 31rem;
                margin-right: 10rem;
+
+               @media (max-width:1020px) {
+                border: 2px solid red;
+                margin: $size-700 auto;
+                min-width: 80%;
+                text-align: center;
+        
+              
+               }
+
                p{
-                 font-size: 1.6rem;
-                 color :RGBA(255, 255, 255, 0.7)
+                margin-top: $size-700;
+                 font-size: $fs-500;
+                 color :RGBA(255, 255, 255, 0.7);
+                 line-height: 2.7rem;
                }
             }
+            
         }
+        
         .nav_lists{
             display: flex;
-            flex: 1;
-        
+            flex: 1;       
             justify-content: space-between;
+            border: 2px solid green;
+            flex-wrap: wrap;
+            @media (max-width:1020px) {
+                width: 100%;
+                //justify-content: center;
+                
+            }
+    
+
             .nav_list{
+                margin-left: 2rem;
+                @media (max-width:750px) {
+                display: block;
+                margin-bottom: 2rem;
+                flex-basis: 45%;
+                
+                 }
+                 @media (max-width:650px) {
+                    flex-basis: 100%;
+                    
+                 }
                h3{
                 font-size: 2.2rem;
                 margin-bottom: 4.2rem;
@@ -1088,5 +1117,6 @@ header{
           }
             }
         }
+
     }
 }
