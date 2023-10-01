@@ -8,7 +8,7 @@ $orange:#F94D1C;
 @import "variables";
 @import "mixins";
 header{
-    background-color: $bg-color;
+    //background-color: $bg-color;
     //height: 90vh;
 
     .container{
@@ -1090,14 +1090,24 @@ header{
             }
         }
         .footer_social_copyright{
-            //padding: 10px 300px;
-            max-width: 132rem;
+          @include flex-spaced;
+          padding: $size-400;
+          @media (max-width:700px) {
+
+            .social_links{
+                margin-top: $size-700;
+                width: 100%;
+
+                .social_icons{
+                    justify-content: center;
+              
+                }         
+            }
+          }
      
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
             .copyright{
-                color: blue;
+                color: $dark-white;
+                font-size: $fs-500;
             }
 
             .social_links{

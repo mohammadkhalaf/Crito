@@ -1,0 +1,10 @@
+@import "variables";
+header{
+background-color: $bg-color;
+padding-bottom: 10rem;
+.content{
+    border: 2px solid green;
+    margin: 10rem auto;
+    text-align: center;
+}
+}
