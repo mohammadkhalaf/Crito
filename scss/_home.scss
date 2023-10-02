@@ -1,10 +1,3 @@
-$primary-gray: rgba(25, 25, 25, 0.7);
-$secondary-gray:rgba(25, 25, 25, 0.1);
-$light-orange: #f9d783;
-$font-color:#191919;
-$secondary-white:#f0efe9;
-$orange:#F94D1C;
-
 @import "variables";
 @import "mixins";
 header{
@@ -15,7 +8,7 @@ header{
          @include flex-spaced;
     
         .logo{
-            margin-right: 3rem;
+            margin-right: $size-700;
             width: 19rem;
             height: 11rem;
             display: grid;
@@ -26,7 +19,7 @@ header{
             }
         }
         .nav_toggle{
-            font-size: 4rem;
+            font-size: $fs-800;
             display: none;
 
             @media (max-width:1180px) {
@@ -46,7 +39,7 @@ header{
             .contact{
                 @include flex-spaced;
                 padding-bottom: $size-500;
-                border-bottom: 1px solid  $light-gray;
+                border-bottom: .1rem solid  $light-gray;
                 margin-bottom: $size-300;
                 .contact_list{
                    @include flex-center;
@@ -63,15 +56,15 @@ header{
                         &:not(:first-child)::before{
                             content: "";
                             height: 100%;
-                            width: 2px;
+                            width: .2rem;
                             position: absolute;
-                            left: -10px;
+                            left: -1rem;
                             background-color: $light-gray;
 
                         }
 
                         img{
-                            margin-right:.8rem ;
+                            margin-right:$size-300 ;
     
                         }
                      
@@ -82,10 +75,10 @@ header{
 
                     li{
                         cursor: pointer;
-                        padding: 1rem;
+                        padding: $size-400;
     
                         &:hover{
-                            transform: translateY(-7px);
+                            transform: translateY($size-300);
                             transition: transform ease .3s;
                         }
                     }
@@ -119,7 +112,7 @@ header{
     @media (max-width:900px) {
                 flex-direction: column;
             }
-    margin-top: $size-900;
+      margin-top: $size-900;
 
     .image-container{
         img{
@@ -143,7 +136,7 @@ header{
             font-size: $fs-700;
             line-height: 3.2rem;
             color: $dark-gray;
-            letter-spacing: 1px;
+            letter-spacing: .1rem;
             margin-bottom: $size-700;
             line-height: 3.2rem;
         }
@@ -176,22 +169,20 @@ header{
 
     .features_wrapper{
         max-width: 152rem;
-        padding: 8rem 10rem;
-        border: 1px solid $secondary-gray;
+        padding: $size-1000 $size-large;
+        border: .1rem solid $light-gray;
         display: flex;
 
             @media (max-width:1450px) {
-            border: 2px solid green !important;
             max-width: 132rem;
-            padding: 8rem 3rem;
-                
+            padding: $size-1000 $size-700;              
                     }
 
 
             @media (max-width:960px) {
                     flex-direction: column;
-                    padding: 4rem 5rem;
-                    gap: 4rem;
+                    padding: $size-800 $size-900;
+                    gap: $size-800;
             
                 }
     
@@ -204,7 +195,7 @@ header{
                 width: 100%;
                 height: 5.6rem;
                 img{
-                    margin-left: .4rem;
+                    margin-left: $size-200;
                     width: 1.3rem;
                 }
                 @include button-hover;
@@ -222,7 +213,6 @@ header{
              }
                 .single_feature{
                     width: 24rem;
-                    //margin-right: 30px;
                     padding: $size-500 $size-600 ;
                     img{
                         width: 3rem;
@@ -235,9 +225,9 @@ header{
                         margin-bottom: $size-500;          
                     }
                     p{
-                        font-size: 1.6rem;
+                        font-size: $fs-500;
                         line-height: 2.5rem;
-                        color: $primary-gray;
+                        color: $dark-gray;
                     }
 
                      @media (max-width:700px) {
@@ -251,7 +241,7 @@ header{
 
 .about{
     @include flex-spaced;
-    margin: 12rem 0px;
+    margin: $size-xl 0rem;
 
     @media (max-width:950px) {
          flex-direction: column;
@@ -289,12 +279,11 @@ header{
                 margin-bottom: $size-600;
 
                 span{
-                    color: $orange;
+                    color: $dark-orange;
                 }
             }
             p{
-                font-size: 1.6rem;
-                color: $font-color;
+                font-size: $fs-500;
             }
         }
           @media (max-width:750px) {
@@ -317,9 +306,9 @@ header{
 
         }
         .about_text{
-            font-size: 1.6rem ;
+            font-size: $fs-500 ;
             line-height: 3.2rem;
-            color: $primary-gray;
+            color: $dark-gray;
             margin-bottom: 8.8rem;
         }
      
@@ -328,11 +317,11 @@ header{
             align-items: center;
 
             button{
-                padding: 1.7rem 3rem;
-                border-radius: 4rem;
-                background-color: black;
-                color: $secondary-white;
-                margin-right: 3.6rem;
+                padding: $fs-600 $fs-700;
+                border-radius: $radius;
+                background-color: $bg-black;
+                color: $color-white;
+                margin-right: $size-800;
                 &:hover{
                     opacity: .8;
                     transition: all ease .3s;
@@ -349,11 +338,10 @@ header{
                 display: inline-flex;
                 align-items: center;
                 padding: 0 0 ;
-                font-size: 1.6rem;
-                color: $font-color;
+                font-size: $fs-500;
                 img{
                     width: 4.6rem;
-                    margin-right: 1.6rem;
+                    margin-right: $size-600;
                 }
 
                 
@@ -370,7 +358,7 @@ header{
 .services{
     background-color: $bg-color;
     position: relative;
-    padding: 12rem 0;
+    padding: $size-xl 0rem;
     .services_wrapper{
 
         h2{
@@ -382,7 +370,7 @@ header{
         .services_container{
           display: grid;
           grid-template-columns: repeat(4,1fr);
-           gap: 3rem;
+           gap: $size-700;
 
            @media (max-width:1180px) {
            grid-template-columns: repeat(3,1fr);
@@ -396,31 +384,29 @@ header{
                     
                   }
             .service_card{
-                //max-width: 308px;
                 background-color: #fff;
-                padding: 4rem 3rem;
+                padding: $fs-800 $fs-700;
            
                 .line{
-                    height: 1px;
+                    height: .1rem;
                     background-color: black;
                     width: 3.9rem;
-                    margin-bottom: 3.6rem;
+                    margin-bottom: $size-800;
                 }
                 h4{
-                    color: $font-color;
-                    font-size: 2.2rem;
+                    font-size: $fs-700;
                     line-height: 3.3rem;
-                    margin-bottom: 1.2rem;
+                    margin-bottom: $size-500;
                 }
                 p{
-                    font-size: 1.6rem;
-                    color:$primary-gray ;
+                    font-size: $fs-500;
+                    color:$dark-gray ;
                     max-width: 24rem;
-                    margin-bottom: 1rem;
+                    margin-bottom: $size-400;
                 }
-                .ar{
+                .arrow_icon{
                     display: block;
-                    padding: 1.5rem;
+                    padding: $size-500;
                     border-radius: 100%;
                     background-color: black;
                     margin-left: auto;
@@ -440,11 +426,11 @@ header{
             text-align: center;
 
             .service_btn{
-                border: 1px solid black;
+                border: .1rem solid $bg-black;
                 display: inline-block;
                 border-radius: $radius;
-                margin: 20px auto;
-                padding: 2rem 3rem;
+                margin: $size-600 auto;
+                padding: $size-600 $size-700;
                 font-size: $fs-500;
                 line-height: 1.5rem;            
        
@@ -462,31 +448,29 @@ header{
     @include flex-spaced;
 
     &.section-container{
-     margin:6rem auto 10rem auto;
+     margin: $size-900 auto $size-large auto;
     }
     
     .content{
         .title{
-            color: $orange;
-            font-size: 1.8rem;
+            color: $dark-orange;
+            font-size: $fs-600;
             line-height: 2.2rem;
-            margin-bottom: 1.8rem;
+            margin-bottom: $size-600;
         }
         
-
-        //margin:0 116px 0 300px;
         .benefits_list{
 
             ul{
                 li{
                     display: flex;
                     align-items: center;
-                    margin-bottom: 42px;
+                    margin-bottom: $size-800;
                     .img_wrapper{
-                        border: 1px solid  $secondary-gray;
-                        padding: 1.4rem;
+                        border: .1rem solid  $light-gray;
+                        padding: $size-500;
                         border-radius: 100%;
-                        margin-right: 2.4rem;
+                        margin-right: $size-600;
                     }
                     img{
    
@@ -495,14 +479,13 @@ header{
                     }
                     .list_detail{
                         h5{
-                            font-size: 2.2rem;
+                            font-size: $fs-700;
                             font-weight: bold;
-                            color: $font-color;
-                            margin-bottom: .8rem;
+                            margin-bottom: $size-400;
                         }
                         p{
-                            font-size: 1.6rem;
-                            color: $primary-gray;
+                            font-size: $fs-500;
+                            color: $dark-gray;
                             line-height: 2.8rem;
                         }
                     }
@@ -545,8 +528,8 @@ header{
     }
     @media (max-width:1050px) {
     flex-direction: column;
-    padding: 4rem 5rem;
-    gap: 4rem;
+    padding: $size-800 $size-900;
+    gap: $size-400;
     .content{
         width: 100%;
     }
@@ -571,7 +554,7 @@ header{
 .projects{
     .header_wrapper{
         text-align: center;
-        margin-bottom: 9rem;
+        margin-bottom: $size-1000;
         h2{
             max-width: none;
         }
@@ -580,7 +563,7 @@ header{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         justify-content: center;
-        gap: 30px;
+        gap: $size-700;
 
         .project_card{
         img{
@@ -591,7 +574,7 @@ header{
         }
         .project_title{
             font-size: $fs-500;
-            border-bottom: .1rem solid $secondary-gray;
+            border-bottom: .1rem solid $light-gray;
             margin-top: $size-700;
             padding-bottom: $size-400;
             font-weight: bold;
@@ -634,22 +617,22 @@ header{
        text-align: center;
        .projects_btn{
         display: inline-block;
-           margin: 20px auto;
-           background-color: black;
-           color: white;
+           margin: $size-600 auto;
+           background-color: $bg-black;
+           color: $color-white;
            padding: 1.7rem 3.6rem;
-           font-size: 1.6rem;
-           border-radius: 4rem;
+           font-size:$fs-500;
+           border-radius: $radius;
     
        }
     }
 }
 .team{
    background-color:#EDCF87 ;
-    padding: 12rem 0;
+    padding: $size-xl 0;
 
     @media (max-width:800px) {
-     padding: 6rem 0;
+     padding: $size-900 0;
     }
 
 
@@ -670,25 +653,23 @@ header{
 }
 
     .team_container{
-        border: 2px solid navy;
 
-        margin-top: 8rem;
+        margin-top: $size-1000;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap:$size-400; 
 
         @media (max-width:1320px) {
          grid-template-columns: repeat(3, 1fr);
-        border: 2px solid orangered;
               }
                 
           @media (max-width:1000px) {
-          grid-template-columns: repeat(2, 1fr);
+             grid-template-columns: repeat(2, 1fr);
           }
                 
            @media (max-width:700px) {
               grid-template-columns: 1fr;
-         margin-top: 2rem;
+              margin-top: $size-600
            }
 
         .member_card{
@@ -698,18 +679,17 @@ header{
                 height: 420px;
                 object-fit: cover;
                
-                margin-bottom: 2.8rem;
+                margin-bottom: $size-700;
             }
             .member_name{
-                font-size: 2.2rem;
+                font-size: $fs-700;
                 font-weight: bold;
-                color: $font-color;
-                margin-bottom: .8rem;
+                margin-bottom:  $size-300;
             }
 
             .job_title{
-                color: $primary-gray;
-                font-size: 1.6rem;
+                color: $dark-gray;
+                font-size: $fs-500;
                 font-weight: 500;
                 line-height: 2.8rem;
 
@@ -728,7 +708,7 @@ header{
             width: 1rem;
             background-color: $light-gray;
             border-radius: 100%;
-            margin-right: 10px;
+            margin-right: $size-400;
         }
         .active{
         background-color: black;            
@@ -737,15 +717,15 @@ header{
     .testimonials{
      background-color: $color-white;
      max-width: 152rem;
-     padding:10rem;
+     padding: $size-large;
      margin: auto;
     @media (max-width:1000px) {
-            padding: 2rem 0;
+            padding: $size-600 0;
     
         }
      .header_wrapper{
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: $size-700;
 
         h2{
             max-width: none;
@@ -756,19 +736,16 @@ header{
         .testimonials_wrapper{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            //justify-content: center;
-            gap: 1rem;
+            gap: $size-400;
 
 
             .testimonial{
-                //max-width: 35rem;
-                border: 1px solid orange;
-                padding: 4.8rem 3.2rem;
+                padding: $size-900 $size-700;
 
                 .customer_review{
                     font-size: $fs-600;
                     line-height: 3.4rem;
-                    margin-bottom: 3.6rem;
+                    margin-bottom: $size-800;
                 }
                 
                 .customer_info{
@@ -785,12 +762,12 @@ header{
                     }
                     .customer_name_job{
                         .customer_name{
-                            font-size: 2.2rem;
+                            font-size: $fs-700;
                             font-weight: bold;
                         }
                         .customer_job{
-                            color: $orange;
-                            font-size: 1.6rem;
+                            color: $dark-orange;
+                            font-size:$fs-500;
                         }
                     }
                 }
@@ -801,10 +778,6 @@ header{
             }
             @media (max-width:770px) {
              grid-template-columns: 1fr;
-             .testimonial{
-               border: 2px solid orangered;
-        
-             }
             
              }
             
@@ -815,7 +788,7 @@ header{
         display: block;
         margin: $size-900 auto;
         background-color: $color-black;
-        color: white;
+        color: $color-white;
         border-radius: $radius;
         @include button-hover;
     
@@ -826,11 +799,11 @@ header{
     
 }
 .blog{
-    padding: 9rem 0;
+    padding:  $size-large 0;
     .articles_wrapper{
 
         .blog_header-wrapper{
-            margin-bottom: 3.8rem;
+            margin-bottom: $size-800;
             .blog_header{
                @include flex-spaced;
                h2{
@@ -838,7 +811,7 @@ header{
                }
       
               button{
-                border: 1px solid $color-black;
+                border: .1rem solid $color-black;
                 @include button-hover;
               }
             }
@@ -866,7 +839,7 @@ header{
                     width: 100%;
                     height: 230px;
                     object-fit: cover;
-                    margin-bottom: 2.8rem;
+                    margin-bottom: $size-700;
             
                 }
                 .article_date{
@@ -882,12 +855,12 @@ header{
                     flex-direction: column;
             
                     z-index: 1;
-                    font-size: 2.2rem;
+                    font-size: $fs-700;
                     line-height: 3.3rem;
                     font-weight: bold;
                     .article_date-month{
-                        color: $primary-gray;
-                        font-size: 1.6rem;
+                        color: $dark-gray;
+                        font-size: $fs-500;
                         font-weight: normal;
                         padding: 0;
                         margin: 0;
@@ -896,21 +869,20 @@ header{
                }
 
                .article_category{
-                font-size: 1.6rem;
-                color: $primary-gray;
-                margin-bottom: 2rem;
+                font-size: $fs-500;
+                color: $dark-gray;
+                margin-bottom: $size-600;
 
                }
                .article_title{
-                font-size: 2.2rem;
-                color: $font-color;
+                font-size: $fs-700;
                 font-weight: bold;
                 line-height: 3.3rem;
-                margin-bottom: 2rem;
+                margin-bottom: $size-600;
                }
                .article_text{
-                color: $primary-gray;
-                font-size: 1.6rem;
+                color: $dark-gray;
+                font-size: $fs-500;
                 line-height: 2.8rem;
 
                }
@@ -921,14 +893,14 @@ header{
            .image_slider {
                display: flex;
                justify-content: center;
-               margin: 15px 0px;
+               margin: $size-500 0rem;
     
                .slider {
                    height: 10px;
                    width: 10px;
                    background-color: gray;
                    border-radius: 100%;
-                   margin-right: 10px;
+                   margin-right: $size-400;
     
                 }
                 .active {
@@ -954,7 +926,6 @@ header{
 
      form{
          display: flex;
-         border: 1px solid navy;
          margin-right: $size-1000;
          input{
              border: none;
@@ -963,24 +934,25 @@ header{
              
          }
          ::placeholder{
-         color: $primary-gray;
-         font-size: 1.6rem;
+         color: $dark-gray;
+         font-size: $size-500;
          line-height: 1.6rem;
          }
  
          button{
              background-color: $light-orange;
-             margin-left: 1.6rem;
+             margin-left: $size-500;
              @include button-hover;
          }
          @media (max-width:800px) {
             display: block;
             margin: 0;
-           //flex-direction: column;
            width: 100%;
+
            input{
             width: 90%;
            }
+
            button{
             margin-top: $size-500;
            }
@@ -1006,35 +978,39 @@ header{
     color: $color-white;
     position: relative;
     overflow: hidden;
-    .img_container{     
-        position: absolute;
-        bottom: -8rem;
-        right: -13rem;
-        height: 20rem;
-    }
 
+     .img_container {
+       position: absolute;
+       height: 10rem;
+       bottom: 5rem;
+       right: -14rem;
+
+            }
+
+            @media (max-width:700px) {
+                .img_container{
+                    bottom: 12rem;
+                    right: -15rem;
+                }
+                
+            }
     .footer_wrapper{
-        //margin: auto;
         padding-top: $size-900;
 
         .footer_nav{
             padding-bottom: $size-1000;
             @include flex-spaced;
-            border: 2px solid red;
             @media (max-width:1020px) {  
-                 border: 2px solid lightcoral;
                  flex-direction: column;
 
-         }
-           
+              }
 
             .about_crito{
                align-self: flex-start;
                max-width: 31rem;
-               margin-right: 10rem;
+               margin-right: $size-large;
 
                @media (max-width:1020px) {
-                border: 2px solid red;
                 margin: $size-700 auto;
                 min-width: 80%;
                 text-align: center;
@@ -1045,7 +1021,7 @@ header{
                p{
                 margin-top: $size-700;
                  font-size: $fs-500;
-                 color :RGBA(255, 255, 255, 0.7);
+                 color :$dark-white;
                  line-height: 2.7rem;
                }
             }
@@ -1056,20 +1032,18 @@ header{
             display: flex;
             flex: 1;       
             justify-content: space-between;
-            border: 2px solid green;
             flex-wrap: wrap;
             @media (max-width:1020px) {
                 width: 100%;
-                //justify-content: center;
                 
             }
     
 
             .nav_list{
-                margin-left: 2rem;
+                margin-left: $size-600;
                 @media (max-width:750px) {
                 display: block;
-                margin-bottom: 2rem;
+                margin-bottom: $size-600;
                 flex-basis: 45%;
                 
                  }
@@ -1078,12 +1052,12 @@ header{
                     
                  }
                h3{
-                font-size: 2.2rem;
-                margin-bottom: 4.2rem;
+                font-size: $fs-700;
+                margin-bottom: $size-800;
                }
                a{
-                color: rgba(255, 255, 255, 0.7);
-                font-size: 1.6rem;
+                color: $dark-white;
+                font-size: $fs-500;
                 line-height: 4rem;
                 font-weight: 500;
                }
@@ -1116,7 +1090,7 @@ header{
             display: flex;
             align-items: center;
             li{
-                margin-left: 10px;
+                margin-left: $size-400;
 
                 img{
     
