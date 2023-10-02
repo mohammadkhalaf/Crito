@@ -1,8 +1,7 @@
 @import "variables";
 @import "mixins";
 header{
-    //background-color: $bg-color;
-    //height: 90vh;
+    position: relative;
 
     .container{
          @include flex-spaced;
@@ -108,25 +107,31 @@ header{
         }
     }
     .banner{
-    @include flex-spaced;
-    @media (max-width:900px) {
-                flex-direction: column;
-            }
-      margin-top: $size-900;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+   
+    margin-top: $size-900;
+    @media (max-width:1140px) {
+        grid-template-columns: 1fr ;
+            }
     .image-container{
+        //margin-left: 6rem;    
         img{
-            max-width: 50rem;
-            width: 100%;
+            max-width: 100%;
+
         }
     }
     .content{
-        flex: 1;
+
         h1{
             font-size: $fs-900;
             margin-bottom: $size-700;
             line-height: 10rem;
-            @media (max-width:1000px) {
+            text-align: left;
+            margin-top: $size-900;
+            @media (max-width:1200px) {
                 font-size: 7rem;
                 line-height: 7rem;
             }
@@ -139,8 +144,11 @@ header{
             letter-spacing: .1rem;
             margin-bottom: $size-700;
             line-height: 3.2rem;
+            text-align: left;
         }
         .buttons-containers{
+            //border: 2px solid purple;
+            display: flex;
 
             button{
                 padding: $size-500  $size-700;
@@ -156,6 +164,21 @@ header{
             }
 
         }
+    }
+    .line-container{
+        bottom: 0;
+        left: 0;
+        img{
+            width: 70%;
+        }
+        @media (max-width:1200px) {
+            img{
+                width: 50%;
+                border: 2px solid red;
+            }
+            
+        }
+
     }
     }
 }
@@ -931,6 +954,7 @@ header{
              border: none;
              border-radius: $radius;
              padding: $size-500 $size-1000 $size-500 $size-700;
+             width: 30rem;
              
          }
          ::placeholder{
@@ -947,7 +971,7 @@ header{
          @media (max-width:800px) {
             display: block;
             margin: 0;
-           width: 100%;
+             width: 100%;
 
            input{
             width: 90%;
